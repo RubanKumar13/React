@@ -1,6 +1,6 @@
 import React from 'react'
 import Student1 from './Student1';
-import Reduce from '../Reduce/Reduce.jsx'
+
 const studentdata ={
     sname:"alex",
     age:"16",
@@ -8,7 +8,7 @@ const studentdata ={
     Sub:["Maths","Computer","English"],
     contact:{phoneno:123456789,address:"chennai"},
 };
-Reduce()
+
 
 function Context1() {
   return (
