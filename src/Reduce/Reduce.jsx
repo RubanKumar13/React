@@ -37,7 +37,7 @@ function Reduce() {
   return (
    <>
    <div>
-    <button className='btn btn-primary m-2' onClick={plus}>Increment</button>
+    <button className='btn btn-primary m-2' onClick={plus}>Increments</button>
     <p>{state.count}</p> 1
     <button className='btn btn-danger m-2' onClick={minus}>Decrement</button> 
    </div>
