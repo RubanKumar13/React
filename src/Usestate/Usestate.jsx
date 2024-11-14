@@ -15,6 +15,7 @@ function Usestate() {
     {id:5,pname:"Redmi",price:"80,000"},
   ]  
    
+  // use reference 
  const intialize = useRef(true);
  console.log(intialize)
 
@@ -26,6 +27,17 @@ function Usestate() {
  }
     console.log("Hi Message from Useffect");
  },[count])
+
+
+
+
+
+
+
+
+
+
+ 
 
    var plus =()=>{
     if(count>=0){
@@ -54,6 +66,8 @@ function Usestate() {
     setProduct([]);
     settotal(0);
    }
+   const [input ,setinput]  = useState();
+   console.log(input);
   return (
     <>r
      <div className="container">
@@ -79,7 +93,7 @@ function Usestate() {
             </>
         ))}
         <button className='btn btn-danger' onClick={eraseall} >delete all</button>
-        <input type="text" ref={intialize} />
+        <input type="text" ref={intialize} value={input}/>
      </div>
          
     </>

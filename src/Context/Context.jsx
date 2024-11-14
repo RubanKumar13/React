@@ -10,11 +10,9 @@ const studentdata ={
 };
 
 
-export const StudentCons = createContext(studentdata);
+ export const StudentCons = createContext(studentdata);
 
-function Context() {
-
-
+function Context() { 
 
   return (
     <>

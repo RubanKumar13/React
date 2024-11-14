@@ -14,20 +14,23 @@ export function reducefn(state,action){
 
 
 function Reduce() {
- 
+    
     const [state,dispatch] = useReducer(reducefn,{Count:1});
     const [count1,setcount1] = useReducer(reducefn,1);
     const [count,setcount] = useState(0);
     const [Variablename,Function] = useState("");
     
+
+    // var a = setcount(count+1);
     var plus =()=>{
-        
+             
+        // a;
             // setcount(count+1);
             dispatch({type:'increment'});
         
        }
        var minus =()=>{
-        
+         a
             // setcount(count-1);
             dispatch({type:'decrement'});
         
