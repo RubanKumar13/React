@@ -1,21 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react'
+import a from '../assets/react.svg'
 
 function Usestate() {
    
-  
-
-
   console.log("hi");
   var product = [
-    {id:1,pname:"apple",price:"40,000"},
-    {id:2,pname:"Samsung",price:"50,000"},
-    {id:3,pname:"Oppo",price:"60,000"},
-    {id:4,pname:"Moto",price:"70,000"},
-    {id:5,pname:"Redmi",price:"80,000"},
-    {id:5,pname:"Redmi",price:"80,000"},
+    {id:1,pname:"apple",price:"40,000",img:a},
+    {id:2,pname:"Samsung",price:"50,000",img:"../assets/react.svg"},
+    {id:3,pname:"Oppo",price:"60,000",img:"../assets/react.svg"},
+    {id:4,pname:"Moto",price:"70,000",img:"../assets/react.svg"},
+    {id:5,pname:"Redmi",price:"80,000",img:"../assets/react.svg"},
+    {id:5,pname:"Redmi",price:"80,000",img:"../assets/react.svg"},
   ]  
    
-  // use reference 
+  // use reference  
  const intialize = useRef(true);
  console.log(intialize)
 
@@ -27,17 +25,6 @@ function Usestate() {
  }
     console.log("Hi Message from Useffect");
  },[count])
-
-
-
-
-
-
-
-
-
-
- 
 
    var plus =()=>{
     if(count>=0){
@@ -53,7 +40,7 @@ function Usestate() {
     setcount(0);
    }
    const [newproducts,setProduct] = useState(product)
-   const [total,settotal] = useState(product.length)
+   const [total,settotal] = useState(product.length)  
   
    var erase = (id)=>{
     var v = newproducts.filter((x)=>x.id !== id);
@@ -64,12 +51,12 @@ function Usestate() {
 
    var eraseall =()=>{
     setProduct([]);
-    settotal(0);
+     settotal(0);
    }
    const [input ,setinput]  = useState();
    console.log(input);
   return (
-    <>r
+    <>
      <div className="container">
      <h1>count is:{count}</h1>
      <div>
@@ -83,6 +70,7 @@ function Usestate() {
             <div className="card  m-3">
             <p>{v.pname}</p>
             <p>{v.price}</p>
+            <p>{v.img}</p>
             <div >
             <button className='btn btn-danger' onClick={()=>{
                  erase(v.id)
@@ -95,6 +83,7 @@ function Usestate() {
         <button className='btn btn-danger' onClick={eraseall} >delete all</button>
         <input type="text" ref={intialize} value={input}/>
      </div>
+     <img src={a} alt="" />
          
     </>
   )

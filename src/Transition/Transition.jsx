@@ -6,11 +6,11 @@ function Transition() {
     
     const[ispending,settranstion] = useTransition();
     
-    const List_Size = 10000;
+    const List_Size = 100000;
 
     function handlechange(e){
     settranstion(()=>{
-      setInput(e.target.value)
+      setInput(e.target.value)    
       const l=[]
       for(let i=0;i<List_Size;i++){
          l.push(e.target.value)

@@ -1,12 +1,19 @@
 import React, { useCallback, useEffect, useState } from 'react'
+import { useContext } from 'react';
+import { StudentCons } from '../Context/Context';
 
 function Callback() {
+  useContext(StudentCons)
     const [count,setcount] = useState(0);
     const [change,setchange] = useState(0);
 
-    const increment = useCallback(()=>{
-        setcount(count+1);
-    },[count])
+    // const increment = useCallback(()=>{
+    //     setcount(count+1);
+    // },[count])
+
+    const increment = ()=>{
+      setcount(count +1);
+    }
     const increment1 = ()=>{
         setchange(change +1);
     }

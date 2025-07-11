@@ -13,7 +13,7 @@ function Student() {
             return <li key={index}>{subs}</li>
         })}
     </ul>
-    <Contact />
+    {/* <Contact /> */}
     </>
   )
 }

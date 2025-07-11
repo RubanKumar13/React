@@ -9,7 +9,6 @@ const studentdata ={
   contact:{phoneno:123456789,address:"chennai"},
 };
 
-
  export const StudentCons = createContext(studentdata);
 
 function Context() { 
@@ -21,7 +20,7 @@ function Context() {
      <div>Name is {studentdata.sname}</div>
      <div>Age is {studentdata.age}</div>
      <div>Department is {studentdata.dep}</div>
-     <Student  />
+     {/* <Student  /> */}
     </StudentCons.Provider>
      
     </>

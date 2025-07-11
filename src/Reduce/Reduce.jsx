@@ -11,8 +11,6 @@ export function reducefn(state,action){
    }
 }
 
-
-
 function Reduce() {
     
     const [state,dispatch] = useReducer(reducefn,{Count:1});
