@@ -5,8 +5,8 @@ import 'bootstrap/dist/js/bootstrap.js'
 // import Context1 from './WOContext/Context1'
 // import Callback from './Callback/Callback'
 // import Mem from './Memo/Mem'
-// import Reduce from './Reduce/Reduce'
-import Usestate from './Usestate/Usestate'
+import Reduce from './Reduce/Reduce'
+// import Usestate from './Usestate/Usestate'
 // import Context from './Context/Context'
 // import Effect from './Effect/Effect'
 
@@ -15,11 +15,11 @@ function App() {
 
   return (
     <>
-      <Usestate />
+      {/* <Usestate /> */}
       {/* <Context /> */}
       {/* <Effect /> */}
       {/* <Context1 /> */}
-      {/* <Reduce  /> */}
+       <Reduce  /> 
       {/* <Callback /> */}
       {/* <Mem /> */}
       {/* <Transition /> */}
