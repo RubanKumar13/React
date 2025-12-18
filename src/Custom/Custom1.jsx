@@ -16,9 +16,9 @@ function Custom1() {
      />
      <h2>Filtered Names</h2>
      <div>
-        {filter.map((names,index)=>{
+        {filter.map((names,index)=>
             <p key={index}>{names}</p>
-        })}
+        )}
      </div>
     </>
   )
