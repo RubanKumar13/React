@@ -40,4 +40,3 @@ function Reduce() {
 export default Reduce;
 
 
-export default Reduce
